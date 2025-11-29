@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>Café</title>
+  <path
+    fill="#f59e0b"
+    d="M14 22h30v10a10 10 0 0 1-10 10H24a10 10 0 0 1-10-10Z"
+  />
+  <path
+    fill="none"
+    stroke="#f59e0b"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+    d="M44 26h6a6 6 0 0 1 0 12h-4"
+  />
+  <path
+    fill="none"
+    stroke="#f59e0b"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+    d="M10 46h44"
+  />
+  <path
+    fill="none"
+    stroke="#f59e0b"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="3"
+    d="M23 14c0 3-3 3-3 6s3 3 3 6M32 14c0 3-3 3-3 6s3 3 3 6M41 14c0 3-3 3-3 6s3 3 3 6"
+  />
+</svg>
