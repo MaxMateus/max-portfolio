@@ -8,7 +8,7 @@ const timeline = [
     company: 'Movida',
     role: 'Desenvolvedor de Software',
     description:
-      'Lidero iniciativas de integração e autenticação entre serviços, conectando times de produto e infraestrutura para manter entregas estáveis.',
+      'Desenvolvedor de software com experiência com framework Laravel e APIs legadas, atuando no backend com foco em integrações, desempenho e evolução de serviços internos.',
   }
 ]
 </script>
