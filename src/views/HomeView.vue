@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import NoteItem from '../components/NoteItem.vue'
 import ProjectCard from '../components/ProjectCard.vue'
 import SectionTitle from '../components/SectionTitle.vue'
 
@@ -15,12 +14,6 @@ const projects = [
     progress: 65,
     techs: ['Laravel', 'PHP', 'Docker', 'MySQL'],
   }
-]
-
-const notes = [
-  { title: 'Checklist de MFA em apps Laravel', date: 'Out 2024', link: '#' },
-  { title: 'O que aprendi migrando para Vue 3 + Vite', date: 'Jun 2024', link: '#' },
-  { title: 'Boas práticas para APIs públicas', date: 'Jan 2024', link: '#' },
 ]
 </script>
 
