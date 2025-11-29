@@ -27,7 +27,7 @@ const notes = [
 <template>
   <div class="space-y-16">
     <section class="space-y-4 fade-in">
-      <p class="text-sm uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400">Olá, eu sou o Max</p>
+      <p class="text-sm uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400">Visão geral</p>
       <h1 class="text-4xl font-semibold leading-tight text-slate-900 dark:text-white md:text-5xl">
         Construo produtos digitais com código claro, segurança e foco no usuário.
       </h1>
