@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 32" role="img" aria-label="MySQL logo">
+  <defs>
+    <style>
+      .mysql-blue { fill: #00618a; }
+      .mysql-orange { fill: #e48e00; }
+    </style>
+  </defs>
+  <text x="10" y="22" class="mysql-orange" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">
+    My
+  </text>
+  <text x="42" y="22" class="mysql-blue" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="0.5">
+    SQL
+  </text>
+</svg>

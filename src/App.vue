@@ -1,30 +1,51 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import { onMounted, ref } from 'vue'
+import { RouterView } from 'vue-router'
+import BaseContainer from './components/layout/BaseContainer.vue'
+
+const isDark = ref(false)
+
+const applyTheme = (value: boolean) => {
+  isDark.value = value
+  const root = document.documentElement
+  root.classList.toggle('dark', value)
+  localStorage.setItem('theme', value ? 'dark' : 'light')
+}
+
+const toggleTheme = () => {
+  applyTheme(!isDark.value)
+}
+
+onMounted(() => {
+  const stored = localStorage.getItem('theme')
+  if (stored) {
+    applyTheme(stored === 'dark')
+    return
+  }
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  applyTheme(prefersDark)
+})
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <BaseContainer :is-dark="isDark" @toggle-theme="toggleTheme">
+    <RouterView v-slot="{ Component, route }">
+      <Transition name="fade" mode="out-in" appear>
+        <component :is="Component" :key="route.fullPath" />
+      </Transition>
+    </RouterView>
+  </BaseContainer>
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 180ms ease, transform 180ms ease;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(6px);
 }
 </style>
