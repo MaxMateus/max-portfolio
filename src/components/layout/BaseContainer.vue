@@ -14,7 +14,7 @@ const year = new Date().getFullYear()
 
 <template>
   <div
-    class="flex min-h-screen flex-col bg-slate-50 text-slate-900 transition-colors duration-200 dark:bg-slate-900 dark:text-slate-100"
+    class="flex min-h-screen flex-col bg-sky-100 text-slate-900 transition-colors duration-200 dark:bg-slate-900 dark:text-slate-100"
   >
     <div class="flex-1 px-4 py-10 md:px-8 md:py-14">
       <div class="lg:flex lg:items-start">
@@ -29,7 +29,7 @@ const year = new Date().getFullYear()
       </div>
     </div>
 
-    <footer class="border-t border-slate-200/80 bg-white/80 px-6 py-10 text-sm text-slate-500 backdrop-blur dark:border-slate-800/70 dark:bg-slate-900/70 dark:text-slate-400">
+    <footer class="border-t border-slate-200/80 bg-sky-100/80 px-6 py-10 text-sm text-slate-500 backdrop-blur dark:border-slate-800/70 dark:bg-slate-900/70 dark:text-slate-400">
       <div class="mx-auto flex max-w-5xl items-center justify-between">
         <span>Feito por Max Mateus</span>
         <span>{{ year }}</span>
