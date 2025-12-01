@@ -56,9 +56,9 @@ const themeLabel = computed(() =>
         v-for="link in links"
         :key="link.to"
         :to="link.to"
-        class="flex items-center gap-2 rounded-lg px-3 py-2 no-underline transition-colors duration-150 hover:bg-slate-100 hover:text-amber-700 dark:hover:bg-slate-800"
+        class="flex items-center gap-2 rounded-lg border border-transparent px-3 py-2 no-underline transition-all duration-150 hover:border-blue-400 hover:bg-blue-200/80 hover:shadow-sm hover:text-blue-900 dark:border-transparent dark:hover:border-slate-700 dark:hover:bg-slate-800"
         :class="{
-          'bg-slate-900 text-white shadow-sm dark:bg-slate-800 dark:text-white': route.path === link.to,
+          'border-blue-400 bg-blue-300 text-slate-900 shadow-sm dark:border-slate-700 dark:bg-slate-800 dark:text-white': route.path === link.to,
         }"
       >
         <span class="h-2 w-2 rounded-full bg-slate-300 dark:bg-slate-600" aria-hidden="true"></span>
