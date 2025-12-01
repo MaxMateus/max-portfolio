@@ -4,7 +4,7 @@ import Timeline from '../components/Timeline.vue'
 
 const timeline = [
   {
-    year: '2023 — 2025',
+    year: '2022 — 2025',
     company: 'Movida',
     role: 'Desenvolvedor de Software',
     description:

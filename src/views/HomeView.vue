@@ -22,7 +22,7 @@ const projects = [
     <section class="space-y-4 fade-in">
       <p class="text-sm uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400">Visão geral</p>
       <h1 class="text-4xl font-semibold leading-tight text-slate-900 dark:text-white md:text-5xl">
-        Construo produtos digitais com código claro, segurança e foco no usuário.
+        Sobre mim
       </h1>
       <div class="space-y-3 text-base text-slate-700 dark:text-slate-200">
         <p>
