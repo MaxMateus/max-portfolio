@@ -11,7 +11,7 @@ const projects = [
     link: 'https://github.com/maxmateus/ms-auth',
     status: 'Em desenvolvimento',
     progress: 65,
-    techs: ['Laravel', 'PHP', 'Docker', 'MySQL'],
+    techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
   }
 ]
 </script>

@@ -4,6 +4,8 @@ import laravelIcon from '../assets/tech/laravel.svg'
 import phpIcon from '../assets/tech/php.svg'
 import dockerIcon from '../assets/tech/docker.svg'
 import mysqlIcon from '../assets/tech/mysql.svg'
+import redisIcon from '../assets/tech/redis.png'
+import swaggerIcon from '../assets/tech/swagger.svg'
 
 const props = defineProps<{
   title: string
@@ -25,6 +27,8 @@ const iconMap: Record<string, string> = {
   php: phpIcon,
   docker: dockerIcon,
   mysql: mysqlIcon,
+  redis: redisIcon,
+  swagger: swaggerIcon,
 }
 
 const techIcon = (tech: string) => {

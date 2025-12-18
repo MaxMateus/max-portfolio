@@ -10,9 +10,9 @@ const projects = [
     description:
       'Serviço de autenticação em Laravel com suporte a MFA (e-mail, SMS e WhatsApp) e emissão de tokens via Passport.',
     link: 'https://github.com/maxmateus/ms-auth',
-    status: 'Em desenvolvimento',
-    progress: 65,
-    techs: ['Laravel', 'PHP', 'Docker', 'MySQL'],
+    status: 'Concluído',
+    progress: 100,
+    techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
   }
 ]
 </script>
