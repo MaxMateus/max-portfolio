@@ -1,19 +1,7 @@
 <script setup lang="ts">
 import ProjectCard from '../components/ProjectCard.vue'
 import SectionTitle from '../components/SectionTitle.vue'
-
-const projects = [
-  {
-    title: 'ms-auth',
-    year: '2025',
-    description:
-      'Serviço de autenticação em Laravel com suporte a MFA (e-mail, SMS e WhatsApp) e emissão de tokens via Passport.',
-    link: 'https://github.com/maxmateus/ms-auth',
-    status: 'Em desenvolvimento',
-    progress: 65,
-    techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
-  }
-]
+import { projects } from '../data/projects'
 </script>
 
 <template>
@@ -27,7 +15,7 @@ const projects = [
     <div class="grid gap-4">
       <ProjectCard
         v-for="project in projects"
-        :key="project.title"
+        :key="project.id"
         :title="project.title"
         :description="project.description"
         :year="project.year"

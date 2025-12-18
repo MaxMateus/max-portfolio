@@ -2,19 +2,7 @@
 import { RouterLink } from 'vue-router'
 import ProjectCard from '../components/ProjectCard.vue'
 import SectionTitle from '../components/SectionTitle.vue'
-
-const projects = [
-  {
-    title: 'ms-auth',
-    year: '2025',
-    description:
-      'Serviço de autenticação em Laravel com suporte a MFA (e-mail, SMS e WhatsApp) e emissão de tokens via Passport.',
-    link: 'https://github.com/maxmateus/ms-auth',
-    status: 'Concluído',
-    progress: 100,
-    techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
-  }
-]
+import { featuredProjects } from '../data/projects'
 </script>
 
 <template>
@@ -38,8 +26,8 @@ const projects = [
       <SectionTitle eyebrow="Trabalho recente" title="Projetos em destaque" />
       <div class="grid gap-4">
         <ProjectCard
-          v-for="project in projects"
-          :key="project.title"
+          v-for="project in featuredProjects"
+          :key="project.id"
           :title="project.title"
           :description="project.description"
           :year="project.year"
