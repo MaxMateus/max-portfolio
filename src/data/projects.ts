@@ -4,6 +4,7 @@ export type Project = {
   year: string
   description: string
   link?: string
+  repos?: { name: string; url: string }[]
   status?: string
   progress?: number
   techs?: string[]
@@ -21,6 +22,22 @@ export const projects: Project[] = [
     status: 'Concluído',
     progress: 100,
     techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
+    featured: true,
+  },
+  {
+    id: 'minibank',
+    title: 'Bank',
+    year: '2025',
+    description:
+      'Banco digital para estudo, com arquitetura em camadas e responsabilidades bem definidas. O projeto simula fluxos centrais de um sistema bancário, envolvendo controle de acesso, gestão de contas, movimentações financeiras com regras de negócio e integração entre frontend e backend.',
+    repos: [
+      { name: 'docker-bank', url: 'https://github.com/MaxMateus/docker-bank' },
+      { name: 'bff-bank', url: 'https://github.com/MaxMateus/bff-bank' },
+      { name: 'api-bank', url: 'https://github.com/MaxMateus/api-bank' },
+    ],
+    status: 'Em desenvolvimento',
+    progress: 10,
+    techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger', 'Vue.js'],
     featured: true,
   },
 ]

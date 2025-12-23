@@ -29,12 +29,13 @@ import { featuredProjects } from '../data/projects'
           v-for="project in featuredProjects"
           :key="project.id"
           :title="project.title"
-          :description="project.description"
-          :year="project.year"
-          :link="project.link"
-          :status="project.status"
-          :progress="project.progress"
-          :techs="project.techs"
+        :description="project.description"
+        :year="project.year"
+        :link="project.link"
+        :repos="project.repos"
+        :status="project.status"
+        :progress="project.progress"
+        :techs="project.techs"
         />
       </div>
       <RouterLink to="/projects" class="inline-flex items-center gap-2 text-sm font-semibold">

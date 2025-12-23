@@ -20,6 +20,7 @@ import { projects } from '../data/projects'
         :description="project.description"
         :year="project.year"
         :link="project.link"
+        :repos="project.repos"
         :status="project.status"
         :progress="project.progress"
         :techs="project.techs"
