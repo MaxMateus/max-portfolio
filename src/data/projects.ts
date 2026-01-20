@@ -14,7 +14,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 'passport-auth',
-    title: 'Passport Auth',
+    title: 'Autenticação com Passport',
     year: '2025',
     description:
       'Serviço de autenticação em Laravel com suporte a MFA (e-mail e SMS) e emissão de tokens via Passport.',
