@@ -12,18 +12,18 @@ export type Project = {
 }
 
 export const projects: Project[] = [
-  // {
-  //   id: 'ms-auth',
-  //   title: 'ms-auth',
-  //   year: '2025',
-  //   description:
-  //     'Serviço de autenticação em Laravel com suporte a MFA (e-mail, SMS e WhatsApp) e emissão de tokens via Passport.',
-  //   link: 'https://github.com/maxmateus/ms-auth',
-  //   status: 'Concluído',
-  //   progress: 100,
-  //   techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
-  //   featured: true,
-  // },
+  {
+    id: 'passport-auth',
+    title: 'Passport Auth',
+    year: '2025',
+    description:
+      'Serviço de autenticação em Laravel com suporte a MFA (e-mail e SMS) e emissão de tokens via Passport.',
+    link: 'https://github.com/maxmateus/passport-auth',
+    status: 'Concluído',
+    progress: 100,
+    techs: ['Laravel', 'PHP', 'Docker', 'MySQL', 'Redis', 'Swagger'],
+    featured: true,
+  },
   {
     id: 'minibank',
     title: 'Bank',
